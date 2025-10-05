@@ -12,13 +12,12 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="resultText"/>
     <Button text="选择bilibili源视频存储文件夹进行转换" onAction="#onSourceButtonClick"/>
     <Label fx:id="sourceText"/>
-    <Button text="选择bilibili源视频存储文件夹进行转换" onAction="#onTargetButtonClick"/>
+    <Button text="选择目标视频存储文件夹" onAction="#onTargetButtonClick"/>
     <Label fx:id="targetText"/>
     <Label text="填写生成文件名（改后缀生成不同类型目标文件）"/>
-    <TextField id="FileType" onAction="#onTargetFileNameChanged"/>
+    <TextField fx:id="fileType"/>
     <Button text="开始生成" onAction="#onStartToTurn"/>
 
 </VBox>

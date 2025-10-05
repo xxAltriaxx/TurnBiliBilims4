@@ -11,9 +11,9 @@ public class TurnApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(TurnApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 400, 300);
         TurnController controller=fxmlLoader.getController();
-        controller.setStage(stage);
+        controller.setProperty(stage);
         stage.setTitle("B站ms4转mp4");
         stage.setScene(scene);
         stage.show();
